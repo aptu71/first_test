@@ -1,0 +1,9 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t aptu71/first_test -f Docker.dev .
+
+script:
+  - docker run aptu71/first_test npm run test -- --coverage
