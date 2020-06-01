@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t aptu71/first_test -f Docker.dev .
+  - docker build -t aptu71/first_test -f Dockerfile.dev .
 
 script:
   - docker run aptu71/first_test npm run test -- --coverage
