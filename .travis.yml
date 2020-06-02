@@ -11,10 +11,10 @@ script:
 deploy:
   provider: elasticbeanstalk
   region: "us-east-1"
-  app: "first_test"
-  env: "FirstTest-env"
+  app: "ranner"
+  env: "Ranner-env"
   bucket_name: "elasticbeanstalk-us-east-1-085557256654"
-  bucket_path: "first_test"
+  bucket_path: "ranner"
   on:
     branch: master
   access_key_id: $AWS_ACCESS_KEY
